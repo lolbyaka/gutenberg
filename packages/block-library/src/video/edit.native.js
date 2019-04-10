@@ -35,7 +35,7 @@ import { doAction, hasAction } from '@wordpress/hooks';
  */
 import styles from '../image/styles.scss';
 import style from './style.scss';
-import MediaUploadUI from '../image/media-upload-ui.native.js';
+import MediaUploadProgress from '../image/media-upload-progress';
 import icon from './icon';
 
 const VIDEO_ASPECT_RATIO = 1.7;
@@ -169,7 +169,7 @@ class VideoEdit extends React.Component {
 							onClick={ () => ( null ) }
 						/>
 					</InspectorControls>
-					<MediaUploadUI
+					<MediaUploadProgress
 						mediaId={ id }
 						ü						onFinishMediaUploadWithSuccess={ this.finishMediaUploadWithSuccess }
 						onFinishMediaUploadWithFailure={ this.finishMediaUploadWithFailure }
